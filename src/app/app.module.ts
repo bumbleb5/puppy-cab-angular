@@ -11,7 +11,6 @@ import { HomeModule } from './modules/home/home.module';
 // Componenets
 import { AppBarComponent } from './components/app-bar/app-bar.component';
 
-// Material Compoenents
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';

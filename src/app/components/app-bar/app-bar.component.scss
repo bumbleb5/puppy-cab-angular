@@ -1,3 +1,9 @@
+@import "../../../util/variables";
+
 .example-spacer {
     flex: 1 1 auto;
+}
+
+.app-bar {
+    height: $appBarHeight;
 }
