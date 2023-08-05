@@ -1,0 +1,189 @@
+@use '@angular/material' as mat;
+
+$puppycab-teal-palette: (
+    50 : #bedde4,
+    100 : #88c1cd,
+    200 : #60acbc,
+    300 : #3f8796,
+    400 : #367381,
+    500 : #2d606b,
+    600 : #244d55,
+    700 : #1b3940,
+    800 : #12262a,
+    900 : #091315,
+    A100 : #a7e3f0,
+    A200 : #50c7e1,
+    A400 : #2d8a9e,
+    A700 : #307381,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #ffffff,
+        A700 : #ffffff,
+    )
+);
+
+$puppycab-orange-palette: (
+    50 : #ffffff,
+    100 : #fdede1,
+    200 : #f9cdad,
+    300 : #f3a56b,
+    400 : #f1944e,
+    500 : #ef8332,
+    600 : #ed7216,
+    700 : #d36410,
+    800 : #b7570e,
+    900 : #9b490c,
+    A100 : #ffffff,
+    A200 : #ffd8bb,
+    A400 : #ff9e55,
+    A700 : #f69145,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$puppycab-cream-palette: (
+    50 : #ffffff,
+    100 : #ffffff,
+    200 : #ffffff,
+    300 : #ffffff,
+    400 : #fef9f1,
+    500 : #fcecd4,
+    600 : #fadfb7,
+    700 : #f8d39b,
+    800 : #f6c67e,
+    900 : #f4b962,
+    A100 : #ffffff,
+    A200 : #ffffff,
+    A400 : #ffffff,
+    A700 : #fef7eb,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #000000,
+        900 : #000000,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$puppycab-navy-palette: (
+    50 : #46a0ea,
+    100 : #177bcc,
+    200 : #125c9a,
+    300 : #0a365a,
+    400 : #07253e,
+    500 : #041523,
+    600 : #010508,
+    700 : #000000,
+    800 : #000000,
+    900 : #000000,
+    A100 : #279dff,
+    A200 : #0069c0,
+    A400 : #023157,
+    A700 : #05233b,
+    contrast: (
+        50 : #000000,
+        100 : #ffffff,
+        200 : #ffffff,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #ffffff,
+        A400 : #ffffff,
+        A700 : #ffffff,
+    )
+);
+
+$puppycab-red-palette: (
+    50 : #fbe2e2,
+    100 : #f29f9f,
+    200 : #eb6e6e,
+    300 : #e22f2f,
+    400 : #d51e1e,
+    500 : #ba1a1a,
+    600 : #9f1616,
+    700 : #841212,
+    800 : #690f0f,
+    900 : #4f0b0b,
+    A100 : #ffd4d4,
+    A200 : #ff6e6e,
+    A400 : #f31414,
+    A700 : #d61717,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #ffffff,
+        A700 : #ffffff,
+    )
+);
+
+$primary: mat.define-palette($puppycab-teal-palette);
+$accent: mat.define-palette($puppycab-orange-palette);
+$warn: mat.define-palette($puppycab-red-palette);
+$navy: mat.define-palette($puppycab-navy-palette);
+$cream: mat.define-palette($puppycab-cream-palette);
+
+$light-theme: mat.define-light-theme((
+    color: (
+        primary: $primary,
+        accent: $accent,
+        warn: $warn,
+    )
+));
+
+
+$dark-theme: mat.define-dark-theme((
+    color: (
+        primary: $navy,
+        accent: $cream,
+        warn: $warn,
+    )
+));
