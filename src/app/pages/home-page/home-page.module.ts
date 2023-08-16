@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { MatTabsModule } from '@angular/material/tabs';
 import { RouterModule } from '@angular/router';
 import { HomePageComponent } from './home-page.component';
-import { ShortcutCardModule } from '../../components/shortcut-card/shortcut-card.module';
+import { ShortcutCardModule } from './shortcut-card/shortcut-card.module';
 
 @NgModule({
   imports: [
