@@ -1,0 +1,19 @@
+@import "../util/variables";
+
+#app-bar {
+    width: 100%
+}
+
+#app-body {
+    display: flex;
+    width: 100%;
+    height: calc(100% - $appBarHeight);
+}
+
+.home {
+    
+    display: flex;
+    margin: auto;
+
+}
+

@@ -1,4 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+@use 'puppycab' as puppycab;
+@use '@angular/material' as mat;
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@include mat.core();
+@include mat.all-component-themes(puppycab.$light-theme);
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Poppins, Arial, sans-serif;
+
+    &.puppycab-dark {
+        @include mat.all-component-colors(puppycab.$dark-theme);
+    }
+}
