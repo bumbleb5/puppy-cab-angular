@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
+export interface HomePageTab {
+  component: Component;
+  label: string;
+}
+
 @Component({
   selector: 'app-home-page',
   templateUrl: './home-page.component.html',

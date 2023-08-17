@@ -28,7 +28,8 @@ import { ManageRailroadInnardsComponent } from './innards/manage-railroad-innard
     ManageRailroadInnardsComponent
   ],
   exports: [
-    ShortcutCardComponent
+    ShortcutCardComponent,
+    PlanTransportInnardsComponent
   ]
 })
 export class ShortcutCardModule {

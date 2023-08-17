@@ -1,9 +1,17 @@
 <div class="home-wrapper">
-  <!-- tabs above the card -->
-  <mat-tab-group>
-      <mat-tab class="tab-label" label="Plan Transport"></mat-tab>
-      <mat-tab class="tab-label" label="Manage Railroad"></mat-tab>
-  </mat-tab-group>
-  <!-- card content -->
-  <app-shortcut-card class="shortcut-card"></app-shortcut-card>
+    <!-- tabs above the card -->
+    <mat-tab-group animationDuration="0ms">
+        <mat-tab class="tab-label" label="Plan Transport">
+            <div class="form-wrapper">
+                <app-shortcut-card class="shortcut-card">
+                    <app-plan-transport-innards></app-plan-transport-innards>
+                </app-shortcut-card>
+            </div>
+        </mat-tab>
+        <mat-tab class="tab-label" label="Manage Railroad">
+            <div class="form-wrapper">
+                <app-shortcut-card class="shortcut-card"></app-shortcut-card>
+            </div>
+        </mat-tab>
+    </mat-tab-group>
 </div>

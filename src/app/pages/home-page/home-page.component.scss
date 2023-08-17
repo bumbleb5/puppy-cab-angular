@@ -1,5 +1,6 @@
 .shortcut-card {
   height: 400px;
+  display: block;
 }
 
 .home-wrapper {
@@ -9,4 +10,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.form-wrapper {
+  height: 500px;
+  padding: 1px;
 }
