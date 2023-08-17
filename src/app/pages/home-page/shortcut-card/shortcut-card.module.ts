@@ -10,6 +10,10 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatButtonModule} from '@angular/material/button';
 import { PlanTransportInnardsComponent } from './innards/plan-transport-innards/plan-transport-innards.component';
 import { ManageRailroadInnardsComponent } from './innards/manage-railroad-innards/manage-railroad-innards.component';
+import { VolunteerLookupComponent } from './innards/manage-railroad-innards/volunteer-lookup/volunteer-lookup.component';
+import { QuickAddComponent } from './innards/manage-railroad-innards/quick-add/quick-add.component';
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 
 @NgModule({
   imports: [
@@ -20,16 +24,21 @@ import { ManageRailroadInnardsComponent } from './innards/manage-railroad-innard
     MatInputModule,
     MatButtonModule, 
     MatDividerModule, 
-    MatIconModule
+    MatIconModule,
+    MatTabsModule,
+    MatCheckboxModule
   ],
   declarations: [
     ShortcutCardComponent,
     PlanTransportInnardsComponent,
-    ManageRailroadInnardsComponent
+    ManageRailroadInnardsComponent,
+    VolunteerLookupComponent,
+    QuickAddComponent
   ],
   exports: [
     ShortcutCardComponent,
-    PlanTransportInnardsComponent
+    PlanTransportInnardsComponent,
+    ManageRailroadInnardsComponent
   ]
 })
 export class ShortcutCardModule {
